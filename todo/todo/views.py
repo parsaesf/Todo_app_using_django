@@ -17,16 +17,16 @@ from .forms import TodoForm
 
 
 
-class IndexView(LoginRequiredMixin,TemplateView):
+class IndexView(TemplateView):
 
     template_name = "todo/signup.html"
 
     
-'''
-@login_required(login_url='/loginn')
-def home(request):
-    return render(request, 'signup.html')
-'''
+
+# @login_required(login_url='/loginn')
+# def home(request):
+#     return render(request, 'signup.html')
+
 
 
 def signup(request):
